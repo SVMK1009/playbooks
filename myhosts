@@ -1,0 +1,5 @@
+#[appserver]
+#ec2-3-236-196-237.compute-1.amazonaws.com
+
+[local]
+localhost
