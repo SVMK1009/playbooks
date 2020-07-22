@@ -1,10 +1,10 @@
----
- - hosts: appserver
-   name: to add user user1
-   user:  
+--- 
+- 
+  hosts: appserver
+  name: "to add user user1"
+  user: 
+    comment: "adding user1"
+    gid: admin
     name: user1
-    comment:  adding user1
-    uid: 0001
-    gid: admin   
     shell: /bin/bash/
-     
+    uid: 1
