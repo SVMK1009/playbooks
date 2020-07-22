@@ -13,7 +13,7 @@
      state: present
   - name: download jenkins to webapps folder
     get_url :
-      url: http://mirror.serverion.com/jenkins/war/2.241/jenkins.war
+      url: http://updates.jenkins-ci.org/download/war/2.7.3/jenkins.war
       dest: /usr/share/tomcat/webapps/jenkins.war
   - name: enable and start tomcat
     service:
