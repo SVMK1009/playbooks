@@ -1,11 +1,10 @@
 ---
-tasks:
-- hosts: appserver
-  name: to add user user1
-  user:  
-   name: user1
-   comment:  adding user1
-   uid: 0001
-   gid: admin   
-   shell: /bin/bash/
+ - hosts: appserver
+   name: to add user user1
+   user:  
+    name: user1
+    comment:  adding user1
+    uid: 0001
+    gid: admin   
+    shell: /bin/bash/
      
