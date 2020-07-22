@@ -1,22 +1,22 @@
 ---
--name: installing on app server
-hosts:
- become: yes 
- tasks: 
- - name: install openjdk 8
-   yum:
+- name: installing on app server
+  hosts:
+  become: yes 
+  tasks: 
+  - name: install openjdk 8
+    yum:
      name: java-1.8.0-openjdk.x86_64
      state: present
- - name: install tomcat 8
-   yum:
+  - name: install tomcat 8
+    yum:
      name: tomcat
      state: present
- - name: download jenkins to webapps folder
-   get_url :
+  - name: download jenkins to webapps folder
+    get_url :
       url: http://mirror.serverion.com/jenkins/war/2.241/jenkins.war
       dest: /usr/share/tomcat/webapps/jenkins.war
- - name: enable and start tomcat
-   service:
+  - name: enable and start tomcat
+    service:
      name: tomcat 
      state: started
      enabled: yes
