@@ -1,6 +1,6 @@
 ---
 - name: installing on app server
-  hosts:
+  hosts: appserver
   become: yes 
   tasks: 
   - name: install openjdk 8
