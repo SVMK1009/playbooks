@@ -1,11 +1,11 @@
 ---
-- name: "add the user user1 with uid:123 and group of admin"
-  hosts: 
+- name: add the user user1
+  hosts: appserver
   tasks:
-  - user: 
-    name: user1
-    comment:  adding user1
-    uid: 0001
-    gid: admin   
-    shell: /bin/bash/
-    
+  user: 
+   name: user1
+   comment:  adding user1
+   uid: 0001
+   gid: admin   
+   shell: /bin/bash/
+     
