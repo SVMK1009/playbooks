@@ -1,7 +1,7 @@
 ---
+tasks:
 - hosts: appserver
   name: to add user user1
-  tasks:
   user:  
    name: user1
    comment:  adding user1
