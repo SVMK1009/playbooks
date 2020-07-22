@@ -1,5 +1,6 @@
---- 
-- hosts: appserver
+---
+- host: "appserver"
+  tasks:
   name: "to add user user1"
   user: 
    - name: user1 
@@ -7,3 +8,5 @@
      gid: admin
      shell: /bin/bash/
      uid: 1
+
+
