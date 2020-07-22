@@ -1,8 +1,8 @@
 ---
--hosts: appserver
-name: to add user user1
-tasks:
- user: 
+- hosts: appserver
+  name: to add user user1
+  tasks:
+  user:  
    name: user1
    comment:  adding user1
    uid: 0001
