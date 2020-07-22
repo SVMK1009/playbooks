@@ -1,7 +1,7 @@
 ---
--hosts: appserver
-become: yes 
-tasks: 
+ -hosts: ip-172-31-10-106.ec2.internal
+ become: yes 
+ tasks: 
  - name: install openjdk 8
    yum:
      name: java-1.8.0-openjdk.x86_64
