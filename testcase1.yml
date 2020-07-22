@@ -1,5 +1,5 @@
 ---
--hosts: myhosts
+-hosts: local
 become: yes 
 tasks: 
  - name: install openjdk 8
