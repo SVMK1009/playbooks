@@ -6,6 +6,6 @@
     name: user1
     comment:  adding user1
     uid: 0001
-    gid: admin
+    gid: admin   
     shell: /bin/bash/
     
